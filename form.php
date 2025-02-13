@@ -74,7 +74,7 @@
             <label for="numb">Number</label>
             <input type="number" name="numb" id="numb" required />
             <label for="message">Message</label>
-            <input type="number" name="message" id="message" required />
+            <input type="text" name="message" id="message" required />
         </div>
         <button type="submit">Solve the Puzzle</button>
     </form>
