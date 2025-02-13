@@ -28,24 +28,16 @@ def treasureHunt():
     while attempts < 5:
         guess = random.randint(1, 100)
         if guess == number:
-            print(f"Attempt {attempts + 1}: {guess} is the treasure!")
-            print(f"Congratulations! You found the treasure in {attempts + 1} attempts.")
             isFound = 'Found'
             break
         elif guess < number:
-            print(f"Attempt {attempts + 1}: {guess} (Too low)")
             isFound = 'Not Found'
         elif guess > number:
-            print(f"Attempt {attempts + 1}: {guess} (Too high)")
             isFound = 'Not Found'
         
         attempts += 1
         
     return number, attempts, guess, isFound
-
-
-        
-
 
 result, numberType = numberPuzzle(inputNumber)
 binary, vowels = textPuzzle(message)
